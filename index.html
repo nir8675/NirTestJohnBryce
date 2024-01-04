@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Products</h1>
+
+    <input class="inputText" type="text" placeholder="your Product">
+    <input class="inputNumber" type="number" placeholder="price">
+    <select name="Products" class="selectProducts">
+        <option value="Drinks">Drinks</option>
+        <option value="Meat">Meat</option>
+        <option value="Dairy">Dairy</option>
+        <option value="Snacks">Snacks</option>
+        <option value="Basic">Basic</option>
+    </select>
+    <button class="buttonAdd">Add Product</button>
+
+
+    <label for="imageUrl">Image URL:</label>
+    <input type="text" id="imageUrlInput">
+    <button onclick="addImage()">Add Image</button>
+
+    <div id="imageContainer"></div>
+    <h2>My Cart</h2>
+    <ol class="listCart"></ol>
+    <button class="clearCart">Clear The Cart</button>
+    <button class="buttonClearForm">Clear Form</button>
+    <table>
+        <th>
+            <tr>
+                <td>
+                    Product
+                </td>
+                <td>
+                    price
+                </td>
+                <td>type</td>
+                <td>image</td>
+            </tr>
+        </th>
+        <tbody class="tbody">
+
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
