@@ -1,3 +1,4 @@
+// Amazing.
 let inputText = document.querySelector('.inputText');
 let inputNumber = document.querySelector('.inputNumber');
 let productSelector = document.querySelector('.selectProducts');
@@ -23,10 +24,12 @@ buttonAdd.addEventListener('click', function () {
     };
     productsList.push(productObj);
     // saveToLocalStorage();
+    //Aluf!!
     showCart(productObj);
+    //GOOD!!!
     clearFormFields();
 });
-
+// I would call this clearFormButtun//
 clearForm.addEventListener('click', function () {
     clearFormFields();
 });
@@ -44,6 +47,7 @@ function clearFormFields() {
 function showCart(productObj) {
 
     let createTrElement = document.createElement(`tr`);
+    //instead of 1,2,3,4 use the names like trName, trPrice etc..
     let td1 = document.createElement(`td`);
     let td2 = document.createElement(`td`);
     let td3 = document.createElement(`td`);
@@ -59,14 +63,15 @@ function showCart(productObj) {
 
 
 function addImage() {
+    // why not up there with all of the getElements?
     let imageUrlInput = document.getElementById('imageUrlInput');
     let imageUrl = imageUrlInput.value;
-
+    
     let imageElement = document.createElement('img');
 
     imageElement.src = imageUrl;
 
-
+    //ALUF!!!!
     imageElement.style.width = '100px';
     imageElement.style.height = '100px';
 
